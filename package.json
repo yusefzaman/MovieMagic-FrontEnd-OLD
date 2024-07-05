@@ -1,21 +1,23 @@
 {
-  "name": "u4_lesson_mongoose_auth",
-  "version": "1.0.0",
-  "description": "In this lesson, we'll learn to to integrate authentication into our Express server.",
-  "main": "server.js",
+  "name": "react_auth",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "node --watch server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "Michael Lackey",
-  "license": "MIT",
   "dependencies": {
-    "@ngneat/falso": "^6.4.0",
-    "bcrypt": "^5.1.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.3.1",
-    "morgan": "^1.10.0"
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "vite": "^4.3.9"
   }
 }
