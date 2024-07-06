@@ -98,6 +98,153 @@ main {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.image2 {
+  height: 48vh;
+  width: 90vh;
+  margin-left: 55vh;
+  margin-top: 1.75vh;
+}
+
+/* https://codepen.io/dp_lewis/pen/WNZQzN */
+.card-label {
+	background: #444;
+	color: #fff;
+	transition: transform 400ms ease-out;
+	display: inline-block;
+  min-height: 100%;
+	width: 50vh;
+	height: 30vh;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	line-height: 100vh;
+}
+
+.full {
+	position: absolute;
+	top: 60.5vh;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	white-space: nowrap;
+}
+
+.card {
+	position: absolute;
+}
+
+.keys {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	transition: all 300ms linear;
+	opacity: 0;
+}
+
+.card:focus ~ .keys {
+	opacity: 0.8;
+}
+
+.card:nth-of-type(1):checked ~ label:nth-of-type(1), 
+.card:nth-of-type(2):checked ~ label:nth-of-type(2),
+.card:nth-of-type(3):checked ~ label:nth-of-type(3),
+.card:nth-of-type(4):checked ~ label:nth-of-type(4){
+   z-index: 0;
+}
+
+.card:nth-of-type(1):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+
+.card:nth-of-type(2):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+
+.card:nth-of-type(3):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+
+.card:nth-of-type(4):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+
+label[for="clubs"] {
+	background-size: cover;
+	background-image: url("https://img.freepik.com/premium-photo/restaurant-chef-kitchen-neural-network-ai-generated_76080-39007.jpg");
+}
+
+label[for="spades"]{
+	background-size: cover;
+	background-image: url("https://images.nightcafe.studio/jobs/2tKWu3ALfOrJVVmvfv1Z/2tKWu3ALfOrJVVmvfv1Z--1--e1a42.jpg?tr=w-1600,c-at_max");
+}
+label[for="hearts"] {
+	background-size: cover;
+	background-image: url("https://www.gyftr.com/rewards/amex-platinumreserve/images/BookMyShow-banner.png");
+}
+
+label[for="clubs1"] {
+	background-size: cover;
+	background-image: url("https://www.mcdmenu.net/wp-content/uploads/2023/11/Mcdonalds-Menu-India-768x768.webp");
+}
+
+label[for="spades1"]{
+	background-size: cover;
+	background-image: url("https://th.bing.com/th/id/R.251dbf3ea9232a573b784b88b25de8df?rik=1DoABEOgtwW44A&pid=ImgRaw&r=0");
+}
+label[for="hearts1"] {
+	background-size: cover;
+	background-image: url("https://images.nightcafe.studio/jobs/L7oE6U8olGPtFEtzGUDR/L7oE6U8olGPtFEtzGUDR--1--8in1d.jpg?tr=w-1600,c-at_max");
+}
+
+label[for="clubs2"] {
+	background-size: cover;
+	background-image: url("https://images.nightcafe.studio/jobs/htbUvBfZwMglGTJNFUYA/htbUvBfZwMglGTJNFUYA--1--t12x5.jpg?tr=w-1600,c-at_max");
+}
+
+label[for="spades2"]{
+	background-size: cover;
+	background-image: url("https://img.freepik.com/premium-photo/perfume-best-perfume-generative-ai_983314-1972.jpg");
+}
+label[for="hearts2"] {
+	background-size: cover;
+	background-image: url("https://cdna.artstation.com/p/assets/images/images/042/872/676/large/duong-nguyen-junpeiro-remastered.jpg?1635692715");
+}
+
+.card-label:before,
+.card-label:after {
+	color: white;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	padding: 1rem;
+	font-size: 3rem;
+	height: 10rem;
+	line-height: 10rem;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	cursor: pointer;
+}
+
+.card-label:before {
+	content: "\276D";
+	right: 100%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.card-label:after {
+	content: "\276C";
+	left: 100%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+/**/
+
 .card-overlay {
   /* border: 2px solid var(--primary-button-hover); */
   width: 60%;
